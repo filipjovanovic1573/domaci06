@@ -1,0 +1,22 @@
+<html t:type="layout" title="Pregled soba"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <t:beaneditform object="soba" class="col-md-offset-4 col-md-4" exclude="id" t:submitlabel="Dodaj sobu">
+        <p:sprat>
+            <t:textfield t:id="sprat" value="spratValue" placeholder="Sprat" />
+        </p:sprat>
+        <p:internet>
+            <t:checkbox t:id="internet" value="internetValue"/> <t:label for="internet"/> <br/>
+        </p:internet>
+        <p:tv>
+            <t:checkbox t:id="tv" value="tvValue"/> <t:label for="tv"/> <br/>
+        </p:tv>
+        <p:djakuzi>
+            <t:checkbox t:id="djakuzi" value="djakuziValue"/> <t:label for="djakuzi"/> <br/>
+        </p:djakuzi>
+    </t:beaneditform>
+
+    <t:grid source="listaSoba" />
+
+</html>
